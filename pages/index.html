@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration form</title>
+    <link rel="stylesheet" href="../style/Login.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="loginPage()">Login</button>
+                <button type="button" class="toggle-btn" onclick="registerPage()">Register</button>
+            </div>
+            <form id="login" name="Login" class="input-group" >
+                <input class="input-field" type="email" name="emailId" placeholder="Email Id"  required>
+                <input type="text" class="input-field" placeholder="Password" name="password" required>
+                <!-- <input type="checkbox" class="check-box"><span>Remember Password</span> -->
+                <button onclick="loginCheck()" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" name="Register" class="input-group" onsubmit="storeUserData()">
+                <input type="text" name="userId" class="input-field" placeholder="User Id" required>
+                <input type="email" name="emailId" class="input-field" placeholder="Email Id" required>
+                <input type="text" name="password" class="input-field" placeholder="Password" required>
+                <input type="text" name="address" class="input-field" placeholder="Address" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/login.js">
+
+    </script>
+    <script src="../js/service.js"></script>
+
+</body>
+
+</html>
