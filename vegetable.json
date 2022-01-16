@@ -1,58 +1,57 @@
 {
   "vegetable": [
     {
-      "image": "Vegetables/Onion.png",
+      "image": "../Vegetables/Onion.png",
       "name": "Onian Red",
       "price": 8.5,
       "qty": ""
     },
     {
-      "image": "Vegetables/Tomato.jpg",
+      "image": "../Vegetables/Tomato.jpg",
       "name": "Fresh Tomatos",
       "price": 7.5,
       "qty": ""
     },
     {
-      "image": "Vegetables/Spinach.jpg",
+      "image": "../Vegetables/Spinach.jpg",
       "name": "Fresh Spinach",
       "price": 8.25,
       "qty": ""
     },
     {
-      "image": "Vegetables/Cabbage.jpg",
+      "image": "../Vegetables/Cabbage.jpg",
       "name": "Fresh Cabbage",
       "price": 32,
       "qty": ""
     },
     {
-      "image": "Vegetables/GreenPeas.jpg",
+      "image": "../Vegetables/GreenPeas.jpg",
       "name": "Fresh Green Peas",
       "price": 11.11,
       "qty": ""
     }
-  
   ],
   "fruit": [
     {
-      "image": "Fruits/Anjeer.png",
+      "image": "../Fruits/Anjeer.png",
       "name": "Fresho Figs",
       "price": 200,
       "qty": ""
     },
     {
-      "image": "Fruits/Kiwi.jfif",
+      "image": "../Fruits/Kiwi.jfif",
       "name": "Fresho Kiwi Green",
       "price": 38,
       "qty": ""
     },
     {
-      "image": "Fruits/Banana.png",
+      "image": "../Fruits/Banana.png",
       "name": "Fresho Yellow Banana",
       "price": 10,
       "qty": ""
     },
     {
-      "image": "Fruits/Pomegranate.webp",
+      "image": "../Fruits/Pomegranate.webp",
       "name": "Fresho Promegranate",
       "price": 7.5,
       "qty": ""
@@ -67,5 +66,4 @@
       "id": 1
     }
   ]
-
 }

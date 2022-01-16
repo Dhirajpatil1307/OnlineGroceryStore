@@ -17,18 +17,18 @@
                 <button type="button" class="toggle-btn" onclick="loginPage()">Login</button>
                 <button type="button" class="toggle-btn" onclick="registerPage()">Register</button>
             </div>
-            <form id="login" name="Login" class="input-group" >
+            <form id="login" name="Login" class="input-group" onsubmit="return false" >
                 <input class="input-field" type="email" name="emailId" placeholder="Email Id"  required>
                 <input type="text" class="input-field" placeholder="Password" name="password" required>
                 <!-- <input type="checkbox" class="check-box"><span>Remember Password</span> -->
                 <button onclick="loginCheck()" class="submit-btn">Log in</button>
             </form>
-            <form id="register" name="Register" class="input-group" onsubmit="storeUserData()">
+            <form id="register" name="Register" class="input-group" onsubmit="return false">
                 <input type="text" name="userId" class="input-field" placeholder="User Id" required>
                 <input type="email" name="emailId" class="input-field" placeholder="Email Id" required>
                 <input type="text" name="password" class="input-field" placeholder="Password" required>
                 <input type="text" name="address" class="input-field" placeholder="Address" required>
-                <button type="submit" class="submit-btn">Register</button>
+                <button type="button" class="submit-btn" onclick="storeUserData()">Register</button>
             </form>
         </div>
     </div>

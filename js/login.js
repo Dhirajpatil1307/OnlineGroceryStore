@@ -23,13 +23,15 @@ function storeUserData() {
     }
     makeAJAXCall("POST", " http://localhost:3000/User", true, user);
 }
+
 async function loginCheck() {
+    console.log("inlogin")
     let users = JSON.parse(await makeAJAXCall("GET", " http://localhost:3000/User"));
-    let requiredUser = users.filter(user => user.emailId == document.forms["Login"]["emailId"].value);
+    let requiredUser = users.filter(user => user.emailId === document.forms["Login"]["emailId"].value);
     console.log(requiredUser[0]);
     if (requiredUser[0] != null && requiredUser[0].password == document.forms["Login"]["password"].value) {
         localStorage.setItem("ValidUser", true);
         localStorage.setItem("userAddress", requiredUser[0].address);
-        window.location.replace("../dailyneeds.html");
+        window.location.replace("./dailyneeds.html");
     }
 }

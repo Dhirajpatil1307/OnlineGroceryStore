@@ -137,5 +137,5 @@ function placeOrder(){
 function logOut(){
     localStorage.removeItem("ValidUser");
     localStorage.removeItem("userAddress");
-    window.location.replace("pages/index.html");
+    window.location.replace("../pages/index.html");
 }
